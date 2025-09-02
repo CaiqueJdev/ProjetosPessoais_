@@ -1,10 +1,11 @@
+import Logo from "../components/Logo";
 const Header = () => {
     return ( 
         <>
             <header>
-                <div id="DivHeader" className="">
+                <div id="DivHeader" className="flex w-full bg-b5">
                     <div id="Logo">
-                        <img src="" alt="" />
+                    <Logo/>
                     </div>
                     <nav id="Pesquisa">
                         <input type="text" />

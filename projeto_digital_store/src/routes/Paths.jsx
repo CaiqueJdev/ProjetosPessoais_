@@ -6,9 +6,7 @@ const Paths = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}/>
-
-            </Routes>
-        
+            </Routes>    
         </BrowserRouter>
      );
 }
