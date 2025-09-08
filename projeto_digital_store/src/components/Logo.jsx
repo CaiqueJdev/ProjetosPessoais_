@@ -1,8 +1,8 @@
-import Images from "../assets/logo-headers.svg"
-const Logo = () => {
+
+const Logo = ({Images}) => {
     return ( 
         <>
-        <img src={Images} alt="Logo" className="w-[253px] h-[44px]"/>
+            <img src={Images} alt="Logo" className="w-[253px] h-[44px]"/>
         </>
      );
 }

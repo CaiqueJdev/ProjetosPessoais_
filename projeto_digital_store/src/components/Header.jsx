@@ -1,24 +1,37 @@
 import Logo from "../components/Logo";
 import { Button } from 'primereact/button';
+import cart from '/src/assets/mini-cart.svg'
+import HeaderLogo from "../assets/logo-headers.svg"
 
 const Header = () => {
     return ( 
         <>
-            <header>
-                <div id="DivHeader" className="flex items-center justify-around max-w-[1080px] m-auto p-3">
-                    {/* Logo */}
-                    <div id="Logo">
-                    <Logo/>
+            <header className="w-full">
+                <div id="DivHeader" className="flex flex-col max-w-[1080px] m-auto p-3">
+                    <div id="DivHeader" className="flex flex-start items-center justify-between">
+                        {/* Logo */}
+                        <div id="Logo" className="">
+                            <Logo Images={HeaderLogo}/>
+                        </div>
+                        {/* Pesquisa */}
+                        <div id="Pesquisa" className="m-3 p-0 ">
+                            <input type="text" placeholder="Pesquisar produto..." className="bg-p5 h-8 w-[100%] rounded-[5px] px-3"/>
+                        </div>
+                        {/* Buttons 1*/}
+                        <nav id="Buttons" className="flex items-center gap-5 ">
+                            <a href="" className="border-b text-p1 nowrap">Cadastre-se</a>
+                            <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px] ">Entrar</button>
+                            <img src={cart} alt="" />
+                        </nav>
                     </div>
-                    {/* Pesquisa */}
-                    <div id="Pesquisa" className="">
-                        <input type="text" className="bg-p5 h-8 w-[100%] rounded-[5px]"/>
-                    </div>
-                    {/* Buttons */}
-                    <nav id="Buttons" className="flex items-center ">
-                        <a href="" className="text-b1">Cadastre-se</a>
-                        <Button label="Entrar" className="" style={{backgroundColor:"#C92071"}}/>
-                        <img src="" alt="" />
+                    {/* Navegação */}
+                    <nav>
+                        <ul className="flex gap-8 py-2 max-">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Produtos</a></li>
+                            <li><a href="">Categorias</a></li>
+                            <li><a href="">Meus Pedidos</a></li>
+                        </ul>
                     </nav>
                 </div>
             </header>

@@ -17,3 +17,9 @@
   --color-p4: #CCCCCC;
   --color-p5: #F5F5F5;
 }
+.logo{
+  filter: brightness(12);
+}
+.ts{
+  font-size: 8px;
+}
