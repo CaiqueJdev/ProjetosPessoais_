@@ -28,10 +28,12 @@ const Footer = () => {
        ] 
     return ( 
         <>
-        <footer className="w-full bg-p0 text-p4 text-xs ">
+        <footer 
+            className="w-full bg-p0 text-p4 text-base "
+        >
             <div id="DivFooter" 
-                className="max-w-[1080px] flex flex-row p-3 justify-center m-auto"
-                >
+                className="max-w-[1080px] flex flex-row p-3 justify-center m-auto gap-10"
+            >
                 <div className="flex flex-col gap-6">
                     <Logo Images={FooterLogo}/>
                     <p>Lorem, ipsum dolor sit amet consectoetur adipisicing elit. Delectus, voluptas <br />rerum accusamus incidunt rem placeat temporibus, nam cum eum repudiandae, quos est nisi laboriosam non accusantium</p>
@@ -58,7 +60,7 @@ const Footer = () => {
                 </div>
             </div>
                 <hr className="border-p2 "/>
-                <p className="text-center p-5 ts">2025 @Digital Store</p>
+                <p className="text-center p-5 text-da">2025 @Digital Store</p>
         </footer>
         </> 
     );
