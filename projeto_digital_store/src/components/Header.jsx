@@ -17,7 +17,7 @@ const Header = () => {
                             <input type="text" placeholder="Pesquisar produto..." className="bg-p5 h-8 w-[100%] rounded-[5px] px-3"/>
                         </div>
                         {/* Buttons 1*/}
-                        <nav id="Buttons" className="flex items-center gap-5 grow-4">
+                        <nav id="Buttons" className="flex items-center justify-around grow-4">
                             <a href="" className="border-b text-p1 nowrap">Cadastre-se</a>
                             <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px] ">Entrar</button>
                             <img src={cart} alt="" className="flex m-4"/>
@@ -25,7 +25,7 @@ const Header = () => {
                     </div>
                     {/* Navegação */}
                     <nav>
-                        <ul className="flex gap-8 py-2 max-">
+                        <ul className="flex gap-8 py-2 ">
                             <li><a href="">Home</a></li>
                             <li><a href="">Produtos</a></li>
                             <li><a href="">Categorias</a></li>
