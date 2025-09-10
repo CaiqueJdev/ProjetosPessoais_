@@ -5,8 +5,8 @@ import HeaderLogo from "../assets/logo-headers.svg"
 const Header = () => {
     return ( 
         <>
-            <header className="w-full">
-                <div id="DivHeader" className="flex flex-col max-w-[1080px] m-auto p-3">
+            <header className="w-full ">
+                <div id="DivHeader" className="flex flex-col p-3 max-w-[1280px] m-auto">
                     <div id="DivHeader" className="flex flex-start items-center justify-between">
                         {/* Logo */}
                         <div id="Logo" className="flex grow-2">
@@ -17,11 +17,11 @@ const Header = () => {
                             <input type="text" placeholder="Pesquisar produto..." className="bg-p5 h-8 w-[100%] rounded-[5px] px-3"/>
                         </div>
                         {/* Buttons 1*/}
-                        <nav id="Buttons" className="flex items-center gap-5 grow-4">
+                        <nav id="Buttons" className="flex items-center gap-5 grow-4 justify-around">
                             <a href="" className="border-b text-p1 nowrap">Cadastre-se</a>
                             <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px] ">Entrar</button>
-                            <img src={cart} alt="" className="flex m-4"/>
                         </nav>
+                            <img src={cart} alt="" className="flex "/>
                     </div>
                     {/* Navegação */}
                     <nav>
