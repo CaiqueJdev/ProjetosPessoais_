@@ -1,11 +1,30 @@
 import Logo from "../components/Logo";
 import { Button } from 'primereact/button';
-import cart from '/src/assets/mini-cart.svg'
-import HeaderLogo from "../assets/logo-headers.svg"
+import cart from '/src/assets/mini-cart.svg';
+import HeaderLogo from "../assets/logo-headers.svg";
+import {IconField} from "primereact/iconfield";
+import {InputIcon} from "primereact/inputicon";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+
+const HeaderStyle = styled.header`
+    header{
+        & nav ul{
+            & li a {
+                transition: .3s;
+                &:hover, &.active{
+                    color: #C92071;
+                }
+            }
+        }
+    }
+`
+
 const Header = () => {
     return ( 
         <>
-            <header className="w-full ">
+        <HeaderStyle>
+            <header className="w-full bg-p7">
                 <div id="DivHeader" className="flex flex-col p-3 max-w-[1280px] m-auto">
                     <div id="DivHeader" className="flex flex-start items-center justify-between">
                         {/* Logo */}
@@ -14,7 +33,12 @@ const Header = () => {
                         </div>
                         {/* Pesquisa */}
                         <div id="Pesquisa" className="grow-6 flex m-3">
-                            <input type="text" placeholder="Pesquisar produto..." className="bg-p5 h-8 w-[100%] rounded-[5px] px-3"/>
+                            <IconField iconPosition="right">
+                                <InputIcon
+                                    className="pi pi-search"
+                                />
+                                <input type="text" placeholder="Pesquisar produto..." className="bg-p5 h-8 w-[100%] rounded-[5px] px-3"/>
+                            </IconField>
                         </div>
                         {/* Buttons 1*/}
                         <nav id="Buttons" className="flex items-center gap-5 grow-4">
@@ -26,14 +50,23 @@ const Header = () => {
                     {/* Navegação */}
                     <nav>
                         <ul className="flex gap-8 py-2 ">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Produtos</a></li>
-                            <li><a href="">Categorias</a></li>
-                            <li><a href="">Meus Pedidos</a></li>
+                            <li>
+                                <NavLink to={"/HomePage"}>Home</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={"/Produtos"}>Produtos</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={"/Categorias"}>Categorias</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to={"/MeusPedidos"}>Meu Pedidos</NavLink>
+                            </li>
                         </ul>
                     </nav>
                 </div>
             </header>
+        </HeaderStyle>
         </>
      );
 }

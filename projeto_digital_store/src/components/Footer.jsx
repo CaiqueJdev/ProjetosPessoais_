@@ -29,7 +29,9 @@ const Footer = () => {
     return ( 
         <>
         <footer className="w-full bg-p0 text-p4 text-base">
-            <div id="DivFooter" className="max-w-[1280px] flex flex-row p-3 m-auto">
+            <div id="DivFooter"
+             className="max-w-[1280px] flex flex-row p-3 m-auto"
+            >
                 {/* Digital Store */}
                 <div className="flex flex-col gap-6 grow-4 basis-[500px]">
                     <Logo Images={FooterLogo}/>

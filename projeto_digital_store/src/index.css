@@ -16,10 +16,17 @@
   --color-p3: #8F8F8F;
   --color-p4: #CCCCCC;
   --color-p5: #F5F5F5;
+  --color-p6: #F9F8FE;
+  --color-p7: #FFFFFF;
+
 }
 .logo{
   filter: brightness(12);
 }
 .text-da{
   font-size: 13px;
+}
+body{
+  padding: 0px;
+  margin: 0px;
 }
