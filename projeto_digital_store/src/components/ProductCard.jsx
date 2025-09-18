@@ -1,18 +1,20 @@
 const ProductCard = ({image, name, price, priceDiscount}) => {
     return ( 
         <>
-            <div className="w-[292px] h-[321px] border rounded-lg p-4 flex flex-col items-center shadow-sm">
+            <div className="w-[292px] h-[321px] rounded-lg p-4 flex flex-col items-center shadow-sm m-1">
                 {/* Imagem do produto */}
-                <div className="bg-p7">
+                <div className="bg-p7 p-3 h-full">
                     <img
                         src={image}
                         alt={name}
-                        className="h-full w-[292px] h-[221px] object-cover "
+                        className="w-auto -rotate-30"
                     />
                 </div>
 
                 {/* Nome do produto */}
-                <h3 className="mt-2 text-lg font-semibold text-dark-gray-2">
+                <h3 
+                    className="mt-2 text-lg font-semibold text-dark-gray-2 "
+                >
                     {name}
                 </h3>
                 {/* Preco e preco com desconto */}

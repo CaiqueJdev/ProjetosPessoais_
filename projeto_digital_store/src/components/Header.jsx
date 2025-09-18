@@ -4,16 +4,21 @@ import cart from '/src/assets/mini-cart.svg';
 import HeaderLogo from "../assets/logo-headers.svg";
 import {IconField} from "primereact/iconfield";
 import {InputIcon} from "primereact/inputicon";
-import { NavLink } from "react-router-dom";
+import {InputText} from 'primereact/inputtext';
+import {NavLink} from "react-router-dom";
 import styled from "styled-components";
+
+
 
 const HeaderStyle = styled.header`
     header{
         & nav ul{
             & li a {
-                transition: .3s;
+                transition: .1s;
                 &:hover, &.active{
                     color: #C92071;
+                    font-weight: bolder;
+                    border-bottom: 2px solid ;
                 }
             }
         }
@@ -25,33 +30,41 @@ const Header = () => {
         <>
         <HeaderStyle>
             <header className="w-full bg-p7">
-                <div id="DivHeader" className="flex flex-col p-3 max-w-[1280px] m-auto">
+                <div id="DivHeader" className="flex flex-col px-3 pt-3 max-w-[1280px] m-auto">
                     <div id="DivHeader" className="flex flex-start items-center justify-between">
                         {/* Logo */}
-                        <div id="Logo" className="flex grow-2">
+                        <div id="Logo" className="grow-2">
                             <Logo Images={HeaderLogo}/>
                         </div>
                         {/* Pesquisa */}
-                        <div id="Pesquisa" className="grow-6 flex m-3">
-                            <IconField iconPosition="right">
+                        <div 
+                        id="Pesquisa" 
+                        className="grow-6 h-max"
+                        >
+                            <IconField 
+                                iconPosition="right" 
+                                className="relative h-auto"
+                            >
                                 <InputIcon
                                     className="pi pi-search"
                                 />
-                                <input type="text" placeholder="Pesquisar produto..." className="bg-p5 h-8 w-[100%] rounded-[5px] px-3"/>
+                                <InputText 
+                                    className="w-full"
+                                />
                             </IconField>
                         </div>
                         {/* Buttons 1*/}
-                        <nav id="Buttons" className="flex items-center gap-5 grow-4">
+                        <nav id="Buttons" className="flex items-center gap-5 grow-4 justify-center">
                             <a href="" className="border-b text-p1 nowrap">Cadastre-se</a>
-                            <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px] ">Entrar</button>
+                            <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">Entrar</button>
                         </nav>
-                            <img src={cart} alt="" className="flex "/>
+                            <img src={cart} alt="" className="flex mx-2"/>
                     </div>
                     {/* Navegação */}
                     <nav>
-                        <ul className="flex gap-8 py-2 ">
+                        <ul className="flex gap-8 py-3">
                             <li>
-                                <NavLink to={"/HomePage"}>Home</NavLink>
+                                <NavLink to={"/"}>Home</NavLink>
                             </li>
                             <li>
                                 <NavLink to={"/Produtos"}>Produtos</NavLink>

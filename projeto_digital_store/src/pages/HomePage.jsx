@@ -57,18 +57,27 @@ const HomePage = () => {
     return ( 
         <>
             <Section
-                title={""}
+                bg={"#F5F5F5"}
             >
-                
+                <div>
+                    <div>
+                        <p>Melhores ofertas personalizadas</p>
+                        <h1>Queima de stoque Niek</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo quibusdam aliquam facilis odit voluptatem quos doloribus accusantium voluptatibus suscipit vitae, ipsam a nesciunt dicta beatae magni. Voluptas, iusto labore!</p>
+                        
+                    </div>
+                    <div></div>
+                </div>
             </Section>
             <Section
                 title={"Produtos"}
                 link={{text:"Ver todos ->", href: "/produtos"}}
+                bg={"#F9F8FE"}
                 // titleAlign="center" 
-                >
-                    <div className="m-auto w-[1280px]">
-                        <ProductListing products = {productArray} />
-                    </div>
+            >
+                <div className="m-auto">
+                    <ProductListing products = {productArray} />
+                </div>
             </Section>
                 
         </>
