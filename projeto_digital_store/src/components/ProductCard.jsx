@@ -1,7 +1,7 @@
 const ProductCard = ({image, name, price, priceDiscount}) => {
     return ( 
         <>
-            <div className="w-[292px] h-[321px] rounded-lg p-4 flex flex-col items-center shadow-sm m-1">
+            <div className="w-[292px] h-[321px] rounded-lg p-4 flex flex-col items-center shadow-sm">
                 {/* Imagem do produto */}
                 <div className="bg-p7 p-3 h-full">
                     <img
@@ -34,7 +34,7 @@ const ProductCard = ({image, name, price, priceDiscount}) => {
                 </div>
             </div>            
         </>
-     );
+     )
 }
  
 export default ProductCard;

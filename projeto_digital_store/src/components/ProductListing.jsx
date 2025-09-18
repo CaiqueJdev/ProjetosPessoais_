@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 const ProductListing = ({products}) => {
     return ( 
         <>
-        <div className="flex md:flex-wrap">
+        <div className="flex md:flex-wrap justify-between flex-wrap gap-2">
             {products.map((product, index) => (
                 <ProductCard 
                     key={index}

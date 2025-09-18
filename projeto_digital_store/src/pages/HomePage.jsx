@@ -69,13 +69,14 @@ const HomePage = () => {
                     <div></div>
                 </div>
             </Section>
+
             <Section
                 title={"Produtos"}
                 link={{text:"Ver todos ->", href: "/produtos"}}
                 bg={"#F9F8FE"}
                 // titleAlign="center" 
             >
-                <div className="m-auto">
+                <div className="m-auto flex justify-center">
                     <ProductListing products = {productArray} />
                 </div>
             </Section>
