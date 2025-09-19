@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Section from "../components/Section";
 import Img from "../assets/tenis nike.png";
 import ProductListing from "../components/ProductListing";
+import Hero from "../components/Hero";
 const productArray = [
     {
         name:"Tenis Nike",
@@ -56,20 +57,7 @@ const productArray = [
 const HomePage = () => {
     return ( 
         <>
-            <Section
-                bg={"#F5F5F5"}
-            >
-                <div>
-                    <div>
-                        <p>Melhores ofertas personalizadas</p>
-                        <h1>Queima de stoque Niek</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo quibusdam aliquam facilis odit voluptatem quos doloribus accusantium voluptatibus suscipit vitae, ipsam a nesciunt dicta beatae magni. Voluptas, iusto labore!</p>
-                        
-                    </div>
-                    <div></div>
-                </div>
-            </Section>
-
+            <Hero/>
             <Section
                 title={"Produtos"}
                 link={{text:"Ver todos ->", href: "/produtos"}}

@@ -31,7 +31,7 @@ const Header = () => {
         <HeaderStyle>
             <header className="w-full bg-p7">
                 <div id="DivHeader" className="flex flex-col px-3 pt-3 max-w-[1280px] m-auto">
-                    <div id="DivHeader" className="flex flex-start items-center justify-between">
+                    <div className="flex flex-start items-center justify-between">
                         {/* Logo */}
                         <div id="Logo" className="grow-2">
                             <Logo Images={HeaderLogo}/>
@@ -56,7 +56,8 @@ const Header = () => {
                         {/* Buttons 1*/}
                         <nav id="Buttons" className="flex items-center gap-5 grow-4 justify-center">
                             <a href="" className="border-b text-p1 nowrap">Cadastre-se</a>
-                            <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">Entrar</button>
+
+                            <button className="btHeader bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">Entrar</button>
                         </nav>
                             <img src={cart} alt="" className="flex mx-2"/>
                     </div>
