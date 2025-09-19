@@ -1,12 +1,12 @@
+import TenisNike from "../assets/tenis nike.png"
+
 const Hero = () => {
     return ( 
         <>
-            <section id="Hero" className="w-full items-center justify-center">
+            <section id="Hero" className="w-full items-center justify-center bg-p5">
                 <div className="m-auto flex max-w-[1280px] p-3 justify-between h-[90vh] items-center">
                     <div className="flex-1 space-y-[20px]">
-                        <h3 
-                        className="font-bold text-[#F6AA1C]"
-                        >
+                        <h3 className="font-bold text-[#F6AA1C]">
                             Melhores ofertas personalizadas
                         </h3>
                         <h1 className="font-extrabold text-[64px] leading-[68px] space-y-[1px] ">
@@ -20,7 +20,7 @@ const Hero = () => {
                         </button>
                     </div>
                     <div className="flex justify-center items-center flex-1">
-                        a
+                        <img src={TenisNike} alt="" className="-rotate-20"/>
                     </div>
                 </div>
             </section>

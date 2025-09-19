@@ -26,6 +26,7 @@ const Footer = () => {
            {text:"Av.Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161", link: ""},
            {text:"(85) 3051 3411", link: ""},
        ] 
+       
     return ( 
         <>
         <footer className="w-full bg-p0 text-p4 text-base">
@@ -35,11 +36,19 @@ const Footer = () => {
                 {/* Digital Store */}
                 <div className="flex flex-col gap-6 grow-4 basis-[500px]">
                     <Logo Images={FooterLogo}/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                    </p>
                     <div className="flex gap-6">
-                        <a href="https://www.facebook.com/?locale=pt_BR"><img src={facebook} alt=""/></a>
-                        <a href="https://www.instagram.com/"><img src={instagram} alt=""/></a>
-                        <a href="https://x.com/?lang=pt"><img src={twitter} alt="" /></a>
+                        <a href="https://www.facebook.com/?locale=pt_BR">
+                            <img src={facebook} alt=""/>
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src={instagram} alt=""/>
+                        </a>
+                        <a href="https://x.com/?lang=pt">
+                            <img src={twitter} alt="" />
+                        </a>
                     </div>
                 </div>
                 {/* Informacoes */}
@@ -61,7 +70,9 @@ const Footer = () => {
             {/* Direitos */}
             <div>
                 <hr className="border-p2 "/>
-                <p className="text-center p-5 text-da">2025 @Digital Store</p>
+                <p className="text-center p-5 text-da">
+                    2025 @Digital Store
+                </p>
             </div>
         </footer>
         </> 

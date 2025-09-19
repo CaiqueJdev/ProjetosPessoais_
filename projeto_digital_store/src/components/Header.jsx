@@ -50,6 +50,7 @@ const Header = () => {
                                 />
                                 <InputText 
                                     className="w-full"
+                                    style={{backgroundColor:'##474747'}}
                                 />
                             </IconField>
                         </div>

@@ -34,8 +34,8 @@ const Section = ({title, titleAlign= 'left', link, children, bg}) => {
                         <h2 className={`${titleAlignclass}`}>{title}</h2>
                         {link && (
                             <a 
-                            href={link.href}
-                            className=""
+                              href={link.href}
+                              className="text-b2"
                             >
                                 {link.text}
                             </a>

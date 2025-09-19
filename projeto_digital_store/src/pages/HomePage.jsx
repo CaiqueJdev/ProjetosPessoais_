@@ -59,7 +59,7 @@ const HomePage = () => {
         <>
             <Hero/>
             <Section
-                title={"Produtos"}
+                title={"Produtos em destaque"}
                 link={{text:"Ver todos ->", href: "/produtos"}}
                 bg={"#F9F8FE"}
                 // titleAlign="center" 
