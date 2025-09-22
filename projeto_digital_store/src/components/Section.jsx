@@ -18,7 +18,7 @@ const Section = ({title, titleAlign= 'left', link, children, bg}) => {
               {title}
             </h2>
           </div>
-          <div>
+          <div className="flex justify-center p-4">
             {children}
           </div>
         </div>

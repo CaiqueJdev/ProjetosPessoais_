@@ -67,6 +67,19 @@ const HomePage = () => {
                 <div className="m-auto flex justify-center">
                     <ProductListing products = {productArray} />
                 </div>
+                <Section
+                    title={"Colecoes em Destaque"}
+                    titleAlign="center"
+                >
+                    <ul className="flex gap-6 p-1 bg-">
+                        <li><a href="">Camisetas</a></li>
+                        <li><a href="">Calcas</a></li>
+                        <li><a href="">Bones</a></li>
+                        <li><a href="">Headphones</a></li>
+                        <li><a href="">Tenis</a></li>
+                    </ul>
+
+                </Section>
             </Section>
                 
         </>
