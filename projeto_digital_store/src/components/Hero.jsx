@@ -1,4 +1,9 @@
-import TenisNike from "../assets/tenis nike.png"
+import Gallery from "./Gallery";
+
+const imagens = [
+    {src: "src/assets/tenis nike.png"},
+    {src: "src/assets/tenis nike.png"},
+]
 
 const Hero = () => {
     return ( 
@@ -13,14 +18,19 @@ const Hero = () => {
                             Queima de estoque Nike
                         </h1>
                         <p className="text-p2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, neque ducimus in unde laborum voluptatibus natus vero reiciendis.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. aimilique, neque ducimus in unde laborum voluptatibus natus vero reiciendis.
                         </p>
                         <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">
                             Ver Ofertas
                         </button>
                     </div>
                     <div className="flex justify-center items-center flex-1">
-                        <img src={TenisNike} alt="" className="-rotate-20"/>
+                        <Gallery
+                            width="100%"
+                            height="100%"
+                            radius="-20deg"
+                            images={imagens}
+                        />
                     </div>
                 </div>
             </section>

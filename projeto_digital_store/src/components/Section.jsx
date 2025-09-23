@@ -31,7 +31,9 @@ const Section = ({title, titleAlign= 'left', link, children, bg}) => {
             <section className="w-full" style={{backgroundColor: `${bg}`}}>
                 <div className="mx-auto max-w-[1280px] p-3">
                     <div className="flex justify-between items-center">
-                        <h2 className={`${titleAlignclass}`}>{title}</h2>
+                        <h2 className={`${titleAlignclass}`}>
+                          {title}
+                        </h2>
                         {link && (
                             <a 
                               href={link.href}
