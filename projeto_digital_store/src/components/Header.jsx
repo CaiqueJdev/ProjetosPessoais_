@@ -63,8 +63,8 @@ const Header = () => {
                             <img src={cart} alt="" className="flex mx-2"/>
                     </div>
                     {/* Navegação */}
-                    <nav>
-                        <ul className="flex gap-8 py-3">
+                    <nav className="max-md:hidden">
+                        <ul className="flex gap-8 py-3 ">
                             <li>
                                 <NavLink to={"/"}>Home</NavLink>
                             </li>

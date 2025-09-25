@@ -1,16 +1,18 @@
 import Gallery from "./Gallery";
 
 const imagens = [
-    {src: "src/assets/tenis nike.png"},
-    {src: "src/assets/tenis nike.png"},
+    {src: "src/assets/heroNike.png"},
+    {src: "src/assets/heroNike.png"},
+    {src: "src/assets/heroNike.png"},
+    {src: "src/assets/heroNike.png"},
 ]
 
 const Hero = () => {
     return ( 
         <>
             <section id="Hero" className="w-full items-center justify-center bg-p5">
-                <div className="m-auto flex max-w-[1280px] p-3 justify-between h-[90vh] items-center">
-                    <div className="flex-1 space-y-[20px]">
+                <div className="m-auto flex max-w-[1280px] p-3 justify-between h-[90vh] items-center max-md:flex-col">
+                    <div className="flex-5 space-y-[20px] max-md:flex-order-1">
                         <h3 className="font-bold text-[#F6AA1C]">
                             Melhores ofertas personalizadas
                         </h3>
@@ -24,7 +26,7 @@ const Hero = () => {
                             Ver Ofertas
                         </button>
                     </div>
-                    <div className="flex justify-center items-center flex-1">
+                    <div className="flex justify-center items-center flex-7">
                         <Gallery
                             width="100%"
                             height="100%"
