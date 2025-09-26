@@ -79,16 +79,22 @@ const HomePage = () => {
                 >
                     <div 
                         id="colection-container"
-                        className="flex jus"
+                        className="flex gap-1"
                     >
-                        <img 
-                            src={collection1} 
-                            alt="collection1" 
-                            className="rounded-sm"
-                            />
-                        <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">
+                        <div className="relative">
+                            <img
+                                src={collection1}
+                                alt="collection1"
+                                className="rounded-sm w-full h-auto"
+                                />
+                            <button 
+                                className="absolute bottom-7 left-6  bg-b1 w-[153px] h-[48px] rounded-[9px] font-bold text-white text-[14px]"
+                            >
+                                compre aqui
+                            </button>
+                            <h6 className="absolute bg-p0 text-w1 top-4 left-7 p-1 rounded-full">30% SALE</h6> 
+                        </div>
                             
-                        </button>
                         <img src={collection2} alt="collection2" />
                         <img src={collection3} alt="collection3" />
                     </div>
