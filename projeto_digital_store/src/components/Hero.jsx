@@ -1,3 +1,4 @@
+import Button from "./Elements";
 import Gallery from "./Gallery";
 
 const imagens = [
@@ -22,9 +23,7 @@ const Hero = () => {
                         <p className="text-p2">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. aimilique, neque ducimus in unde laborum voluptatibus natus vero reiciendis.
                         </p>
-                        <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">
-                            Ver Ofertas
-                        </button>
+                        <Button text={"Ver Ofertas"}/>
                     </div>
                     <div className="flex justify-center items-center flex-7">
                         <Gallery

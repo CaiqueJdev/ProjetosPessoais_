@@ -1,5 +1,4 @@
 import Logo from "../components/Logo";
-import { Button } from 'primereact/button';
 import cart from '/src/assets/mini-cart.svg';
 import HeaderLogo from "../assets/logo-headers.svg";
 import {IconField} from "primereact/iconfield";
@@ -7,6 +6,7 @@ import {InputIcon} from "primereact/inputicon";
 import {InputText} from 'primereact/inputtext';
 import {NavLink} from "react-router-dom";
 import styled from "styled-components";
+import Elements from "./Elements";
 
 
 
@@ -57,8 +57,7 @@ const Header = () => {
                         {/* Buttons 1*/}
                         <nav id="Buttons" className="flex items-center gap-5 grow-4 justify-center">
                             <a href="" className="border-b text-p1 nowrap">Cadastre-se</a>
-
-                            <button className="btHeader bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">Entrar</button>
+                            <Elements text={"Entrar"}/>
                         </nav>
                             <img src={cart} alt="" className="flex mx-2"/>
                     </div>

@@ -12,20 +12,20 @@ const ProductCard = ({image, name, price, priceDiscount}) => {
                 </div>
 
                 {/* Nome do produto */}
-                <h3 className="mt-2 text-lg font-semibold text-dark-gray-2 ">
+                <h3 className="w-full mt-2 text-lg font-semibold text-dark-gray-2 ">
                     {name}
                 </h3>
                 {/* Preco e preco com desconto */}
-                <div className="flex items-center gap-2 mt-1">
+                <div className="flex items-center gap-2 mt-1 w-full">
                     {priceDiscount ? (
                     <>
                         {/* Preco antigo riscado */}
-                        <span className="text-light-gray line-through text-lg">
-                            {price}
+                        <span className="text-p4 line-through text-lg ">
+                            ${price}
                         </span>
                         {/* Preco com desconto */}
-                        <span className="text-dark-gray-2 text-xl font-bold">
-                            {priceDiscount}
+                        <span className="text-p2 text-xl font-bold">
+                            ${priceDiscount}
                         </span>
                     </>
                     ) : (

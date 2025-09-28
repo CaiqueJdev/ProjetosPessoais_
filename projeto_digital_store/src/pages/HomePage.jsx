@@ -8,6 +8,7 @@ import Img from "../assets/tenis nike.png";
 import collection1 from "../assets/collection-1.png"
 import collection2 from "../assets/collection-2.png"
 import collection3 from "../assets/collection-3.png"
+import Button from "../components/Elements";
 const productArray = [
     {
         name:"Tenis Nike",
@@ -115,7 +116,7 @@ const HomePage = () => {
                             <p className="text-[16px] leading-[28px]">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, quaerat corrupti hic, maxime omnis minima qui error excepturi quia voluptatum labore, exercitationem id. Impedit quos, ratione excepturi harum expedita modi!
                             </p>
-                            <button className="btHeader bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">Ver Oferta</button>
+                            <Button text={"Oferta Especial"}/>
                         </div>
                     </div>
                 </div>
