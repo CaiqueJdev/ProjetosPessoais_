@@ -9,8 +9,15 @@ import collection1 from "../assets/collection-1.png"
 import collection2 from "../assets/collection-2.png"
 import collection3 from "../assets/collection-3.png"
 import Button from "../components/Elements";
+import CardDestaque from "../components/CardDestaque";
 const productArray = [
     {
+        name:"Tenis Nike",
+        image: Img,
+        price:200,
+        priceDiscount:149.9
+    },
+     {
         name:"Tenis Nike",
         image: Img,
         price:200,
@@ -64,6 +71,18 @@ const HomePage = () => {
         <>
             <Hero/>
 
+                <Section
+                    title={"Colecoes em Destaque"}
+                >
+                    <div 
+                        id="colection-container"
+                        className="flex flex-col gap-1 lg:flex-row lg:justify-center"
+                     >
+                        <CardDestaque imgDestaque={collection1}/>
+                        <CardDestaque imgDestaque={collection2}/>
+                        <CardDestaque imgDestaque={collection3}/>
+                    </div>
+                </Section>
             {/* Produtos em alta */}
             <Section
                 title={"Produtos em destaque"}
@@ -74,53 +93,6 @@ const HomePage = () => {
                 <div className="m-auto flex justify-center">
                     <ProductListing products = {productArray} />
                 </div>
-
-                  <Section
-                    title={"Colecoes em Destaque"}
-                >
-                    <div 
-                        id="colection-container"
-                        className="flex flex-col gap-1 md:flex-row md:justify-center"
-                     >
-                        <div className="relative">
-                            <img
-                                src={collection1}
-                                alt="collection1"
-                                className="rounded-sm"
-                            />
-                            <p className="absolute bg-w1 p-1 top-4 left-7 rounded-full">30% Sale</p>
-                            <button className="absolute bottom-4 left-6 bg-b1 w-[153px] h-[48px] rounded-[9px] font-bold text-white text-[14px]">
-                               Compre Aqui
-                            </button>
-                            
-                        </div>
-                        <div className="relative">
-                            <img
-                                src={collection2}
-                                alt="collection1"
-                                className="rounded-sm"
-                            />
-                            <p className="absolute bg-w1 p-1 top-4 left-7 rounded-full">30% Sale</p>
-                            <button className="absolute bottom-4 left-6 bg-b1 w-[153px] h-[48px] rounded-[9px] font-bold text-white text-[14px]">
-                               Compre Aqui
-                            </button>
-                            
-                        </div>
-                        <div className="relative">
-                            <img
-                                src={collection3}
-                                alt="collection1"
-                                className="rounded-sm"
-                            />
-                            <p className="absolute bg-w1 p-1 top-4 left-7 rounded-full">30% Sale</p>
-                            <button className="absolute bottom-4 left-6 bg-b1 w-[153px] h-[48px] rounded-[9px] font-bold text-white text-[14px]">
-                               Compre Aqui
-                            </button>
-                            
-                        </div>
-                    </div>
-                </Section>
-                
             </Section>
 
             <Section>

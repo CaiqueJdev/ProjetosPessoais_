@@ -31,7 +31,7 @@ const Header = () => {
         <HeaderStyle>
             <header className="w-full bg-p7">
                 <div id="DivHeader" className="flex flex-col px-3 pt-3 max-w-[1280px] m-auto">
-                    <div className="flex flex-start items-center justify-between">
+                    <div className="flex flex-start items-center justify-between pt-3">
                         {/* Logo */}
                         <div id="Logo" className="grow-2">
                             <Logo Images={HeaderLogo}/>
@@ -62,7 +62,7 @@ const Header = () => {
                             <img src={cart} alt="" className="flex mx-2"/>
                     </div>
                     {/* Navegação */}
-                    <nav className="max-md:hidden">
+                    <nav className="max-md:hidden py-3">
                         <ul className="flex gap-8 py-3 ">
                             <li>
                                 <NavLink to={"/"}>Home</NavLink>

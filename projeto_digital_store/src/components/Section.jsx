@@ -28,7 +28,7 @@ const Section = ({title, titleAlign= 'left', link, children, bg}) => {
   }
     return ( 
         <>
-            <section className="flex w-full" style={{backgroundColor: `${bg}`}}>
+            <section className="flex w-full py-3" style={{backgroundColor: `${bg}`}}>
                 <div className="mx-auto max-w-[1280px] p-3">
                     <div className="flex justify-between items-center">
                         <h2 className={`${titleAlignclass}`}>

@@ -11,9 +11,9 @@ const imagens = [
 const Hero = () => {
     return ( 
         <>
-            <section id="Hero" className="w-full items-center justify-center bg-p5">
-                <div className="m-auto flex max-w-[1280px] p-3 justify-between h-[90vh] items-center max-md:flex-col">
-                    <div className="flex-5 space-y-[20px] max-md:flex-order-1">
+            <section id="Hero" className="w-full items-center justify-center bg-p5 flex max-md:py-6">
+                <div className="m-auto flex max-w-[1280px] p-3 justify-between h-[90vh] items-center max-md:flex-col max-md:text-center">
+                    <div className="flex-5 space-y-[20px] max-md:order-1">
                         <h3 className="font-bold text-[#F6AA1C]">
                             Melhores ofertas personalizadas
                         </h3>
