@@ -75,23 +75,49 @@ const HomePage = () => {
                     <ProductListing products = {productArray} />
                 </div>
 
-                <Section
+                  <Section
                     title={"Colecoes em Destaque"}
                 >
                     <div 
                         id="colection-container"
-                        className="flex jus"
-                    >
-                        <img 
-                            src={collection1} 
-                            alt="collection1" 
-                            className="rounded-sm"
+                        className="flex flex-col gap-1 md:flex-row md:justify-center"
+                     >
+                        <div className="relative">
+                            <img
+                                src={collection1}
+                                alt="collection1"
+                                className="rounded-sm"
                             />
-                        <button className="bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">
+                            <p className="absolute bg-w1 p-1 top-4 left-7 rounded-full">30% Sale</p>
+                            <button className="absolute bottom-4 left-6 bg-b1 w-[153px] h-[48px] rounded-[9px] font-bold text-white text-[14px]">
+                               Compre Aqui
+                            </button>
                             
-                        </button>
-                        <img src={collection2} alt="collection2" />
-                        <img src={collection3} alt="collection3" />
+                        </div>
+                        <div className="relative">
+                            <img
+                                src={collection2}
+                                alt="collection1"
+                                className="rounded-sm"
+                            />
+                            <p className="absolute bg-w1 p-1 top-4 left-7 rounded-full">30% Sale</p>
+                            <button className="absolute bottom-4 left-6 bg-b1 w-[153px] h-[48px] rounded-[9px] font-bold text-white text-[14px]">
+                               Compre Aqui
+                            </button>
+                            
+                        </div>
+                        <div className="relative">
+                            <img
+                                src={collection3}
+                                alt="collection1"
+                                className="rounded-sm"
+                            />
+                            <p className="absolute bg-w1 p-1 top-4 left-7 rounded-full">30% Sale</p>
+                            <button className="absolute bottom-4 left-6 bg-b1 w-[153px] h-[48px] rounded-[9px] font-bold text-white text-[14px]">
+                               Compre Aqui
+                            </button>
+                            
+                        </div>
                     </div>
                 </Section>
                 
