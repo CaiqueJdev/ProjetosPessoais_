@@ -97,20 +97,27 @@ const HomePage = () => {
             </Section>
 
             <Section>
-                <div className="flex">
-                    <div className="flex-5">
-                        <img src={YellowNike} alt="" />
+                <div className="flex max-lg:flex-col">
+                    <div className="flex-5 relative flex">
+                        <img src={YellowNike} alt="" className="z-10 "/>
+                        <div 
+                            className="absolute bg-linear-to-t from-transparent to-t0 w-full h-full rounded-t-full"
+                        ></div>
                     </div>
-                    <div className="flex-7">
-                        <h2>
-                            Ofertas especial
+                    <div className="flex-7 grid place-items-center">
+                        <div className="flex flex-col gap-3 p-5">
+                            <h2 className="text-[14px] font-bold leading-[22px] text-b2">
+                                Ofertas especial
                             </h2>
-                        <h1>air Jordan edicao de colecionador</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, quaerat corrupti hic, maxime omnis minima qui error excepturi quia voluptatum labore, exercitationem id. Impedit quos, ratione excepturi harum expedita modi!</p>
+                            <h1 className="font-bold text-[48px] leading-[50px]">
+                                Air Jordan edicao de colecionado
+                            </h1>
+                            <p className="text-[16px] leading-[28px]">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, quaerat corrupti hic, maxime omnis minima qui error excepturi quia voluptatum labore, exercitationem id. Impedit quos, ratione excepturi harum expedita modi!
+                            </p>
+                            <button className="btHeader bg-b1 w-[114px] h-[40px] rounded-[9px] font-bold text-white text-[14px]">Ver Oferta</button>
+                        </div>
                     </div>
-                    <p>
-                        novo
-                    </p>
                 </div>
             </Section>
         </>
