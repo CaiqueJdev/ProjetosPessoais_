@@ -4,13 +4,14 @@ const Section = ({title, titleAlign= 'left', link, children, bg}) => {
     if (titleAlign === 'center') {
         return (
       <section 
-        className="w-full"
+        className="w-full text-center"
+        style={{backgroundColor: `${bg}`}}
         >
         <div 
-            className="max-w-[1440px] p-3 mx-auto"
+            className="max-w-[1280px] p-3 mx-auto"
         >
           <div 
-            className="flex justify-center "
+            className=" "
             >
             <h2 
                 className=""
@@ -28,7 +29,7 @@ const Section = ({title, titleAlign= 'left', link, children, bg}) => {
   }
     return ( 
         <>
-            <section className="flex w-full py-3" style={{backgroundColor: `${bg}`}}>
+            <section className="flex w-full py-10" style={{backgroundColor: `${bg}`}}>
                 <div className="mx-auto max-w-[1280px] p-3">
                     <div className="flex justify-between items-center">
                         <h2 className={`${titleAlignclass}`}>

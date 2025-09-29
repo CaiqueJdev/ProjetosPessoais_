@@ -34,3 +34,7 @@ body{
   margin: 0px;
   font-family: 'inter';
 }
+.rounded-50{
+  border-radius: 50%;
+
+}

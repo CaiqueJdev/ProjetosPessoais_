@@ -1,9 +1,9 @@
 const ProductCard = ({image, name, price, priceDiscount}) => {
     return ( 
         <>
-            <div className=" rounded-lg p-4 flex flex-col items-center">
+            <div className=" rounded-lg p-4  flex-col items-center">
                 {/* Imagem do produto */}
-                <div className="bg-p7 p-3 w-[292px] h-[321px] flex justify-center items-center shadow-2xs">
+                <div className="bg-p7 p-3 w-[292px] h-[321px] justify-center items-center shadow-2xs">
                     <img
                         src={image}
                         alt={name}

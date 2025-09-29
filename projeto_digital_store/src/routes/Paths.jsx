@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "../components/Layout";
 import HomePage from "../pages/HomePage";
 import Found from "../components/Found";
+import ProductListingPage from "../pages/ProductListingPage";
 
 const Paths = () => {
     return ( 
@@ -9,7 +10,7 @@ const Paths = () => {
             <Routes>
                 <Route path="/" element={<Layout/>}>
                     <Route path="/" element={<HomePage />}/>
-                    <Route path="/Produtos" element={""}/>
+                    <Route path="/Produtos" element={<ProductListingPage/>}/>
                     <Route path="/Categorias" element={""}/>
                     <Route path="/MeusPedidos" element={""}/>
                 </Route>

@@ -10,6 +10,11 @@ import collection2 from "../assets/collection-2.png"
 import collection3 from "../assets/collection-3.png"
 import Button from "../components/Elements";
 import CardDestaque from "../components/CardDestaque";
+import iconCamiseta from "../assets/icon-camiseta.png"
+import iconCalca from "../assets/icon-calca.png"
+import iconHeadfone from "../assets/icon-headfone.png"
+import iconTenis from "../assets/icon-tenis.png"
+import Iconedestaque from "../components/Iconedestaque";
 const productArray = [
     {
         name:"Tenis Nike",
@@ -70,17 +75,33 @@ const HomePage = () => {
     return ( 
         <>
             <Hero/>
-
                 <Section
                     title={"Colecoes em Destaque"}
+                    bg={"#F9F8FE"}
                 >
                     <div 
                         id="colection-container"
                         className="flex flex-col gap-1 lg:flex-row lg:justify-center"
+                        
                      >
-                        <CardDestaque imgDestaque={collection1}/>
+                        <CardDestaque imgDestaque={collection1} />
                         <CardDestaque imgDestaque={collection2}/>
                         <CardDestaque imgDestaque={collection3}/>
+                    </div>
+                </Section>
+                
+                <Section 
+                    title={"Colecoes em Destaque"}
+                    titleAlign={"center"}
+                    bg={"#F9F8FE"}
+                >
+                    <div className="flex flex-wrap gap-6">
+                        <Iconedestaque title={"Camiseta"} iconimage={iconCamiseta} />
+                        <Iconedestaque title={"Calcas"} iconimage={iconCalca}/>
+                        <Iconedestaque title={"Bones"} iconimage={iconCalca}/>
+                        <Iconedestaque title={"Headphones"} iconimage={iconHeadfone}/>
+                        <Iconedestaque title={"Tenis"} iconimage={iconTenis}/>
+                        
                     </div>
                 </Section>
             {/* Produtos em alta */}
@@ -88,7 +109,7 @@ const HomePage = () => {
                 title={"Produtos em destaque"}
                 link={{text:"Ver todos ->", href: "/produtos"}}
                 bg={"#F9F8FE"}
-                // titleAlign="center" 
+                
             >
                 <div className="m-auto flex justify-center">
                     <ProductListing products = {productArray} />
