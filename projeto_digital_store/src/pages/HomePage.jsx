@@ -16,61 +16,22 @@ import iconHeadfone from "../assets/icon-headfone.png"
 import iconTenis from "../assets/icon-tenis.png"
 import Iconedestaque from "../components/Iconedestaque";
 const productArray = [
-    {
-        name:"Tenis Nike",
-        image: Img,
-        price:200,
-        priceDiscount:149.9
-    },
-     {
-        name:"Tenis Nike",
-        image: Img,
-        price:200,
-        priceDiscount:149.9
-    },
-     {
-        name:"Tenis Nike",
-        image: Img,
-        price:200,
-        priceDiscount:149.9
-    },
-     {
-        name:"Tenis Nike",
-        image: Img,
-        price:200,
-        priceDiscount:149.9
-    },
-     {
-        name:"Tenis Nike",
-        image: Img,
-        price:200,
-        priceDiscount:149.9
-    },
-     {
-        name:"Tenis Nike",
-        image: Img,
-        price:200,
-        priceDiscount:149.9
-    },
-     {
-        name:"Tenis Nike",
-        image: Img,
-        price:200,
-        priceDiscount:149.9
-    },
-     {
-        name:"Tenis Nike",
-        image: Img,
-        price:200,
-        priceDiscount:149.9
-    },
-     {
-        name:"Tenis Nike",
-        image: Img,
-        price:200,
-        priceDiscount:149.9
-    },
+
 ];
+
+function repeatCard(){
+    for(let i = 0; i < 10; i++){
+        productArray.push(
+            {
+                name:"Tenis Nike",
+                image: Img,
+                price:200,
+                priceDiscount:149.9
+            },)}
+}
+repeatCard()
+
+
 const HomePage = () => {
     return ( 
         <>
@@ -124,7 +85,7 @@ const HomePage = () => {
                             className="absolute bg-linear-to-t from-transparent to-t0 w-full h-full rounded-t-full"
                         ></div>
                     </div>
-                    <div className="flex-7 grid place-items-center">
+                    <div className="flex-7 flex items-center justify-center max-lg:text-center">
                         <div className="flex flex-col gap-3 p-5">
                             <h2 className="text-[14px] font-bold leading-[22px] text-b2">
                                 Ofertas especial
@@ -135,7 +96,7 @@ const HomePage = () => {
                             <p className="text-[16px] leading-[28px]">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, quaerat corrupti hic, maxime omnis minima qui error excepturi quia voluptatum labore, exercitationem id. Impedit quos, ratione excepturi harum expedita modi!
                             </p>
-                            <Button text={"Oferta Especial"}/>
+                            <div><Button text={"Oferta Especial"}/></div>
                         </div>
                     </div>
                 </div>
