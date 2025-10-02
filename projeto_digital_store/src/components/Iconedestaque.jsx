@@ -5,7 +5,7 @@ const Iconedestaque = ({iconimage,title,link,}) => {
             
          >
             <div
-                className="flex justify-center items-center bg-w1 w-[104px] h-[104px] rounded-50"
+                className="flex justify-center items-center bg-w1 w-[104px] h-[104px] rounded-50 shadow-md hover:shadow-lg hover:scale-110 transition duration-300"
             >
                 <a href={link}><img src={iconimage} alt="iconimage" /></a>
                 

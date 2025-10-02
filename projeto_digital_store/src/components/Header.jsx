@@ -31,7 +31,14 @@ const Header = () => {
         <HeaderStyle>
             <header className="w-full bg-p7">
                 <div id="DivHeader" className="flex flex-col px-3 pt-3 max-w-[1280px] m-auto">
-                    <div className="flex flex-start items-center justify-between pt-3">
+                    <div className="flex flex-start items-center justify-between pt-3 max-lg:justify-center max-lg:items-center">
+                        <div>
+                            <button className="md:hidden">
+                                <InputIcon
+                                    className="pi pi-bars"
+                                />
+                            </button>
+                        </div>
                         {/* Logo */}
                         <div id="Logo" className="grow-2">
                             <Logo Images={HeaderLogo}/>
@@ -39,7 +46,7 @@ const Header = () => {
                         {/* Pesquisa */}
                         <div 
                         id="Pesquisa" 
-                        className="grow-6 h-max"
+                        className="grow-6 h-max max-md:hidden"
                         >
                             <IconField 
                                 iconPosition="right" 
@@ -55,9 +62,12 @@ const Header = () => {
                             </IconField>
                         </div>
                         {/* Buttons 1*/}
-                        <nav id="Buttons" className="flex items-center gap-5 grow-4 justify-center">
-                            <a href="" className="border-b text-p1 nowrap">Cadastre-se</a>
-                            <Elements text={"Entrar"}/>
+                        <nav id="Buttons" className="flex items-center gap-5 grow-4 justify-center max-md:hidden">
+                            <a href="" className="border-b text-p1 nowrap max-md:hidden">Cadastre-se</a>
+                            <button 
+                                className="bg-b1 h-[40px] rounded-[9px] font-bold text-white text-[14px] w-5 hover:bg-b2 transition duration-300 max-md:hidden">
+                                    Entrar
+                            </button>
                         </nav>
                             <img src={cart} alt="" className="flex mx-2"/>
                     </div>

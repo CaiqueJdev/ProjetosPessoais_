@@ -15,7 +15,14 @@ import iconCalca from "../assets/icon-calca.png"
 import iconHeadfone from "../assets/icon-headfone.png"
 import iconTenis from "../assets/icon-tenis.png"
 import Iconedestaque from "../components/Iconedestaque";
+
 const productArray = [
+    {
+        name:"Tenis Nike",
+        image: Img,
+        price:200,
+        priceDiscount:149.9
+    }
 
 ];
 
@@ -45,7 +52,7 @@ const HomePage = () => {
                         className="flex flex-col gap-1 lg:flex-row lg:justify-center"
                         
                      >
-                        <CardDestaque imgDestaque={collection1} />
+                        <CardDestaque imgDestaque={collection1}/>
                         <CardDestaque imgDestaque={collection2}/>
                         <CardDestaque imgDestaque={collection3}/>
                     </div>
